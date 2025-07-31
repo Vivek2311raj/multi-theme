@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-primary: 'Inter', sans-serif;
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+[data-theme='dark'] {
+  --bg-color: #1f2937;
+  --text-color: #f9fafb;
+  --font-primary: 'Merriweather', serif;
+}
+
+[data-theme='colorful'] {
+  --bg-color: #fff0f5;
+  --text-color: #222;
+  --font-primary: 'Pacifico', cursive;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-primary);
+  transition: all 0.3s ease;
+}
